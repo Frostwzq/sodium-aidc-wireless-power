@@ -1,0 +1,203 @@
+[
+  {
+    "scenario_id": "P0-A",
+    "duty_cycle_assumed": 0.45,
+    "duty_cycle_actual": 0.4487534626038781,
+    "duty_cycle_absolute_difference": -0.001246537396121905,
+    "duty_cycle_relative_deviation_pct": 0.2770083102493123,
+    "duty_cycle_warning": false,
+    "eta_shave_intervals": {
+      "no_storage": [
+        0.0,
+        0.0
+      ],
+      "feedback_conservative_to_optimistic": [
+        0.0,
+        0.011025819418676443
+      ],
+      "forecast_conservative_to_optimistic": [
+        0.19999999999999996,
+        0.29999999999999993
+      ]
+    },
+    "nominal_strategy_eta": {
+      "no_storage": 0.0,
+      "feedback": 0.011025819418676443,
+      "forecast": 0.29999999999999993
+    },
+    "forecast_lift_percentage_points_nominal": 28.897418058132352,
+    "forecast_lift_percentage_points_interval": [
+      19.999999999999996,
+      28.897418058132352
+    ],
+    "feedback_parameters": {
+      "threshold_w": 2744.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 0.0
+    },
+    "forecast_parameters": {
+      "threshold_w": 2744.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 60.0
+    },
+    "feedback_life_consumed_fraction": 0.00024941364102617553,
+    "forecast_life_consumed_fraction": 0.00025421426643594216,
+    "lifetime_budget_fraction": 0.000273972602739726,
+    "rate_limit_kW": 3.92,
+    "below_10pct_warning": "WARNING: P0-A has at least one strategy/uncertainty case with eta_shave below 10%.",
+    "eta_shave_target_25pct": {
+      "target": 0.25,
+      "met_nominally": true,
+      "met_conservative": false,
+      "met_optimistic": true,
+      "depends_on_assumptions": [
+        "duty_cycle = 0.45",
+        "battery power rate = 4C"
+      ],
+      "warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+    },
+    "target_25pct_warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+  },
+  {
+    "scenario_id": "P0-B",
+    "duty_cycle_assumed": 0.45,
+    "duty_cycle_actual": 0.4487534626038781,
+    "duty_cycle_absolute_difference": -0.001246537396121905,
+    "duty_cycle_relative_deviation_pct": 0.2770083102493123,
+    "duty_cycle_warning": false,
+    "eta_shave_intervals": {
+      "no_storage": [
+        0.0,
+        0.0
+      ],
+      "feedback_conservative_to_optimistic": [
+        0.0,
+        0.011025819418676466
+      ],
+      "forecast_conservative_to_optimistic": [
+        0.20000000000000007,
+        0.30000000000000004
+      ]
+    },
+    "nominal_strategy_eta": {
+      "no_storage": 0.0,
+      "feedback": 0.011025819418676466,
+      "forecast": 0.30000000000000004
+    },
+    "forecast_lift_percentage_points_nominal": 28.897418058132356,
+    "forecast_lift_percentage_points_interval": [
+      20.000000000000007,
+      28.897418058132356
+    ],
+    "feedback_parameters": {
+      "threshold_w": 6860.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 0.0
+    },
+    "forecast_parameters": {
+      "threshold_w": 6860.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 60.0
+    },
+    "feedback_life_consumed_fraction": 0.00024941364102617553,
+    "forecast_life_consumed_fraction": 0.00025421426643594216,
+    "lifetime_budget_fraction": 0.000273972602739726,
+    "rate_limit_kW": 9.8,
+    "below_10pct_warning": "WARNING: P0-B has at least one strategy/uncertainty case with eta_shave below 10%.",
+    "eta_shave_target_25pct": {
+      "target": 0.25,
+      "met_nominally": true,
+      "met_conservative": false,
+      "met_optimistic": true,
+      "depends_on_assumptions": [
+        "duty_cycle = 0.45",
+        "battery power rate = 4C"
+      ],
+      "warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+    },
+    "target_25pct_warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+  },
+  {
+    "scenario_id": "P0-C",
+    "duty_cycle_assumed": 0.45,
+    "duty_cycle_actual": 0.4487534626038781,
+    "duty_cycle_absolute_difference": -0.001246537396121905,
+    "duty_cycle_relative_deviation_pct": 0.2770083102493123,
+    "duty_cycle_warning": false,
+    "eta_shave_intervals": {
+      "no_storage": [
+        0.0,
+        0.0
+      ],
+      "feedback_conservative_to_optimistic": [
+        0.0,
+        0.011025819418676558
+      ],
+      "forecast_conservative_to_optimistic": [
+        0.20000000000000004,
+        0.30000000000000004
+      ]
+    },
+    "nominal_strategy_eta": {
+      "no_storage": 0.0,
+      "feedback": 0.011025819418676558,
+      "forecast": 0.30000000000000004
+    },
+    "forecast_lift_percentage_points_nominal": 28.897418058132352,
+    "forecast_lift_percentage_points_interval": [
+      20.000000000000004,
+      28.897418058132352
+    ],
+    "feedback_parameters": {
+      "threshold_w": 16464.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 0.0
+    },
+    "forecast_parameters": {
+      "threshold_w": 16464.0,
+      "dod_limit": 0.8,
+      "soc_window": [
+        0.2,
+        0.8
+      ],
+      "forecast_horizon_s": 60.0
+    },
+    "feedback_life_consumed_fraction": 0.00024941364102617553,
+    "forecast_life_consumed_fraction": 0.00025421426643594216,
+    "lifetime_budget_fraction": 0.000273972602739726,
+    "rate_limit_kW": 23.52,
+    "below_10pct_warning": "WARNING: P0-C has at least one strategy/uncertainty case with eta_shave below 10%.",
+    "eta_shave_target_25pct": {
+      "target": 0.25,
+      "met_nominally": true,
+      "met_conservative": false,
+      "met_optimistic": true,
+      "depends_on_assumptions": [
+        "duty_cycle = 0.45",
+        "battery power rate = 4C"
+      ],
+      "warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+    },
+    "target_25pct_warning": "WARNING: conservative eta_shave is below the 25% target; the target is assumption-dependent."
+  }
+]

@@ -1,0 +1,3 @@
+# 本项目的直接依赖仅有 numpy
+# 标准库（cmath / csv / dataclasses / json / math / pathlib / unittest等）无需声明
+numpy>=1.24

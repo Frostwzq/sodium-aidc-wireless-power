@@ -1,0 +1,661 @@
+{
+  "run": {
+    "global_candidates_per_scenario": 67200,
+    "selection_strategy": "equal-weight normalized distance to the ideal point on total loss and efficiency swing; field uniformity and geometry are included in each Pareto row but constant within each scenario",
+    "sensitivity_fragile_threshold_assumption": "[C] flag as fragile if any +/-5% continuous-parameter perturbation changes f1 or f2 by more than 5%; n_phase integer-neighbor changes are reported separately",
+    "pareto_csv": "p7_pareto_front.csv"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "P0-A",
+      "candidate_counts": {
+        "global": 67200,
+        "local": 108,
+        "pareto_front": 4851
+      },
+      "pareto_endpoints": {
+        "minimum_loss": {
+          "scenario_id": "P0-A",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 88.70053709241579,
+            "n_phase": 4,
+            "t_dead_ns": 50.0,
+            "l_f_uH": 14.249999999999998,
+            "n_tx": 4
+          },
+          "f1_total_loss_w": 134.93303068145724,
+          "loss_terms_w": {
+            "P_sw": 1.275264,
+            "P_cond": 7.800000000000002,
+            "P_mag": 109.65662266401405,
+            "P_ctrl": 15.1216,
+            "P_C_L_proxy": 0.012877350776534483,
+            "P_deadtime_excess": 1.0666666666666664
+          },
+          "f3_uniformity_ratio": 1.1372375198787803e-17,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 4,
+            "grid_nx": 3,
+            "grid_ny": 2,
+            "footprint_m": [
+              0.471,
+              0.314
+            ],
+            "envelope_m": [
+              1.0,
+              0.6
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 6.812345677130177e-17,
+            "max_phi_v": 5.990257583003693,
+            "min_location_tx_units": [
+              1.5,
+              1.5
+            ],
+            "uniformity_ratio": 1.1372375198787803e-17,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 5.001490357536831e-06
+        },
+        "minimum_efficiency_swing": {
+          "scenario_id": "P0-A",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 30.0,
+            "n_phase": 3,
+            "t_dead_ns": 500.0,
+            "l_f_uH": 8.549999999999999,
+            "n_tx": 4
+          },
+          "f1_total_loss_w": 498.88819896031043,
+          "loss_terms_w": {
+            "P_sw": 1.5940800000000004,
+            "P_cond": 38.51851851851853,
+            "P_mag": 109.65662266401405,
+            "P_ctrl": 11.3412,
+            "P_C_L_proxy": 240.0,
+            "P_deadtime_excess": 97.7777777777778
+          },
+          "f3_uniformity_ratio": 1.1372375198787803e-17,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 4,
+            "grid_nx": 3,
+            "grid_ny": 2,
+            "footprint_m": [
+              0.471,
+              0.314
+            ],
+            "envelope_m": [
+              1.0,
+              0.6
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 6.812345677130177e-17,
+            "max_phi_v": 5.990257583003693,
+            "min_location_tx_units": [
+              1.5,
+              1.5
+            ],
+            "uniformity_ratio": 1.1372375198787803e-17,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 4.015097319398642e-06
+        }
+      },
+      "selected_compromise": {
+        "scenario_id": "P0-A",
+        "parameters": {
+          "delta_f_hz": 500.0,
+          "c_l_uf": 41.30587272253592,
+          "n_phase": 3,
+          "t_dead_ns": 350.92105263157896,
+          "l_f_uH": 8.549999999999999,
+          "n_tx": 4
+        },
+        "f1_total_loss_w": 310.4683241992718,
+        "loss_terms_w": {
+          "P_sw": 1.5940800000000004,
+          "P_cond": 38.51851851851853,
+          "P_mag": 109.65662266401405,
+          "P_ctrl": 11.3412,
+          "P_C_L_proxy": 83.3836340108913,
+          "P_deadtime_excess": 65.97426900584796
+        },
+        "f3_uniformity_ratio": 1.1372375198787803e-17,
+        "f4_geometry_violation_m": 0.0,
+        "geometry_feasible": true,
+        "field_diagnostics": {
+          "n_tx": 4,
+          "grid_nx": 3,
+          "grid_ny": 2,
+          "footprint_m": [
+            0.471,
+            0.314
+          ],
+          "envelope_m": [
+            1.0,
+            0.6
+          ],
+          "geometry_violation_m": 0.0,
+          "samples_per_tx": 8,
+          "min_phi_v": 6.812345677130177e-17,
+          "max_phi_v": 5.990257583003693,
+          "min_location_tx_units": [
+            1.5,
+            1.5
+          ],
+          "uniformity_ratio": 1.1372375198787803e-17,
+          "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+        },
+        "f2_max_delta_f_eff": 4.4851525424771665e-06
+      },
+      "sensitivity_relative_pct": {
+        "max_abs_f1_change": {
+          "parameter": "c_l_uf",
+          "value": 39.24057908640913,
+          "f1_change_pct": 5.479383996673121,
+          "f2_change_pct": -1.0198843181814736
+        },
+        "max_abs_f2_change": {
+          "parameter": "c_l_uf",
+          "value": 39.24057908640913,
+          "f1_change_pct": 5.479383996673121,
+          "f2_change_pct": -1.0198843181814736
+        },
+        "largest_discrete_n_phase_f1_change": {
+          "parameter": "n_phase",
+          "value": 4,
+          "f1_change_pct": -4.0390889744369005,
+          "f2_change_pct": 0.7619269423796909
+        }
+      },
+      "fragility_assessment": {
+        "threshold_pct": 5.0,
+        "fragile": true,
+        "basis": "continuous +/-5% perturbations; discrete n_phase neighbors reported separately"
+      },
+      "global_to_fine_movement_pct": {
+        "delta_f_hz": 0.0,
+        "c_l_uf": 5.00000000000001,
+        "t_dead_ns": 5.000000000000002,
+        "l_f_uH": 0.0
+      },
+      "max_fine_step_movement_pct": 5.00000000000001,
+      "step_adequacy": "当前步长不足",
+      "geometry": {
+        "n_tx": 4,
+        "grid_nx": 3,
+        "grid_ny": 2,
+        "footprint_m": [
+          0.471,
+          0.314
+        ],
+        "envelope_m": [
+          1.0,
+          0.6
+        ],
+        "geometry_violation_m": 0.0,
+        "samples_per_tx": 8,
+        "min_phi_v": 6.812345677130177e-17,
+        "max_phi_v": 5.990257583003693,
+        "min_location_tx_units": [
+          1.5,
+          1.5
+        ],
+        "uniformity_ratio": 1.1372375198787803e-17,
+        "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+      },
+      "deadtime_diagnostic": {
+        "literal_document_range_ns": [
+          50.0,
+          500.0
+        ],
+        "natural_commutation_ns_at_center": 41.66666666666668,
+        "selected_deadtime_ns": 350.92105263157896,
+        "selected_setting_exceeds_t_zn": true,
+        "handling": "literal P7 candidates retained; P6 excess-conduction proxy penalizes t_dead above t_zn"
+      }
+    },
+    {
+      "scenario_id": "P0-B",
+      "candidate_counts": {
+        "global": 67200,
+        "local": 162,
+        "pareto_front": 4878
+      },
+      "pareto_endpoints": {
+        "minimum_loss": {
+          "scenario_id": "P0-B",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 88.70053709241579,
+            "n_phase": 6,
+            "t_dead_ns": 50.0,
+            "l_f_uH": 14.249999999999998,
+            "n_tx": 10
+          },
+          "f1_total_loss_w": 1601.2749608721679,
+          "loss_terms_w": {
+            "P_sw": 7.191936000000002,
+            "P_cond": 15.847619047619052,
+            "P_mag": 1550.7788297547759,
+            "P_ctrl": 23.138399999999997,
+            "P_C_L_proxy": 0.051509403106137934,
+            "P_deadtime_excess": 4.266666666666666
+          },
+          "f3_uniformity_ratio": 0.01866776587147735,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 10,
+            "grid_nx": 4,
+            "grid_ny": 3,
+            "footprint_m": [
+              0.628,
+              0.471
+            ],
+            "envelope_m": [
+              1.2,
+              1.2
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 0.13428665712123042,
+            "max_phi_v": 7.193504463563485,
+            "min_location_tx_units": [
+              1.0,
+              3.0
+            ],
+            "uniformity_ratio": 0.01866776587147735,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 1.5030263383453146e-05
+        },
+        "minimum_efficiency_swing": {
+          "scenario_id": "P0-B",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 30.0,
+            "n_phase": 3,
+            "t_dead_ns": 500.0,
+            "l_f_uH": 8.549999999999999,
+            "n_tx": 10
+          },
+          "f1_total_loss_w": 3095.5370769505435,
+          "loss_terms_w": {
+            "P_sw": 5.993280000000003,
+            "P_cond": 176.0846560846562,
+            "P_mag": 1550.7788297547759,
+            "P_ctrl": 11.569199999999999,
+            "P_C_L_proxy": 960.0,
+            "P_deadtime_excess": 391.1111111111113
+          },
+          "f3_uniformity_ratio": 0.01866776587147735,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 10,
+            "grid_nx": 4,
+            "grid_ny": 3,
+            "footprint_m": [
+              0.628,
+              0.471
+            ],
+            "envelope_m": [
+              1.2,
+              1.2
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 0.13428665712123042,
+            "max_phi_v": 7.193504463563485,
+            "min_location_tx_units": [
+              1.0,
+              3.0
+            ],
+            "uniformity_ratio": 0.01866776587147735,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 1.2201955186696978e-05
+        }
+      },
+      "selected_compromise": {
+        "scenario_id": "P0-B",
+        "parameters": {
+          "delta_f_hz": 500.0,
+          "c_l_uf": 39.33892640241516,
+          "n_phase": 4,
+          "t_dead_ns": 452.63157894736844,
+          "l_f_uH": 10.473749999999999,
+          "n_tx": 10
+        },
+        "f1_total_loss_w": 2323.0388433052353,
+        "loss_terms_w": {
+          "P_sw": 6.523297959183674,
+          "P_cond": 66.00424426330301,
+          "P_mag": 1550.7788297547759,
+          "P_ctrl": 15.4256,
+          "P_C_L_proxy": 398.02927256917076,
+          "P_deadtime_excess": 286.27759875880184
+        },
+        "f3_uniformity_ratio": 0.01866776587147735,
+        "f4_geometry_violation_m": 0.0,
+        "geometry_feasible": true,
+        "field_diagnostics": {
+          "n_tx": 10,
+          "grid_nx": 4,
+          "grid_ny": 3,
+          "footprint_m": [
+            0.628,
+            0.471
+          ],
+          "envelope_m": [
+            1.2,
+            1.2
+          ],
+          "geometry_violation_m": 0.0,
+          "samples_per_tx": 8,
+          "min_phi_v": 0.13428665712123042,
+          "max_phi_v": 7.193504463563485,
+          "min_location_tx_units": [
+            1.0,
+            3.0
+          ],
+          "uniformity_ratio": 0.01866776587147735,
+          "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+        },
+        "f2_max_delta_f_eff": 1.3553637471352964e-05
+      },
+      "sensitivity_relative_pct": {
+        "max_abs_f1_change": {
+          "parameter": "c_l_uf",
+          "value": 37.3719800822944,
+          "f1_change_pct": 3.353869467262618,
+          "f2_change_pct": -1.0790997271019283
+        },
+        "max_abs_f2_change": {
+          "parameter": "c_l_uf",
+          "value": 37.3719800822944,
+          "f1_change_pct": 3.353869467262618,
+          "f2_change_pct": -1.0790997271019283
+        },
+        "largest_discrete_n_phase_f1_change": {
+          "parameter": "n_phase",
+          "value": 3,
+          "f1_change_pct": 1.9736824491484646,
+          "f2_change_pct": -0.6371528625512486
+        }
+      },
+      "fragility_assessment": {
+        "threshold_pct": 5.0,
+        "fragile": false,
+        "basis": "continuous +/-5% perturbations; discrete n_phase neighbors reported separately"
+      },
+      "global_to_fine_movement_pct": {
+        "delta_f_hz": 0.0,
+        "c_l_uf": 0.0,
+        "t_dead_ns": 0.0,
+        "l_f_uH": 5.000000000000012
+      },
+      "max_fine_step_movement_pct": 5.000000000000012,
+      "step_adequacy": "当前步长不足",
+      "geometry": {
+        "n_tx": 10,
+        "grid_nx": 4,
+        "grid_ny": 3,
+        "footprint_m": [
+          0.628,
+          0.471
+        ],
+        "envelope_m": [
+          1.2,
+          1.2
+        ],
+        "geometry_violation_m": 0.0,
+        "samples_per_tx": 8,
+        "min_phi_v": 0.13428665712123042,
+        "max_phi_v": 7.193504463563485,
+        "min_location_tx_units": [
+          1.0,
+          3.0
+        ],
+        "uniformity_ratio": 0.01866776587147735,
+        "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+      },
+      "deadtime_diagnostic": {
+        "literal_document_range_ns": [
+          50.0,
+          500.0
+        ],
+        "natural_commutation_ns_at_center": 41.66666666666668,
+        "selected_deadtime_ns": 452.63157894736844,
+        "selected_setting_exceeds_t_zn": true,
+        "handling": "literal P7 candidates retained; P6 excess-conduction proxy penalizes t_dead above t_zn"
+      }
+    },
+    {
+      "scenario_id": "P0-C",
+      "candidate_counts": {
+        "global": 67200,
+        "local": 162,
+        "pareto_front": 4878
+      },
+      "pareto_endpoints": {
+        "minimum_loss": {
+          "scenario_id": "P0-C",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 88.70053709241579,
+            "n_phase": 8,
+            "t_dead_ns": 50.0,
+            "l_f_uH": 14.249999999999998,
+            "n_tx": 24
+          },
+          "f1_total_loss_w": 11790.176719643852,
+          "loss_terms_w": {
+            "P_sw": 23.053824,
+            "P_cond": 24.375000000000004,
+            "P_mag": 11700.00685546942,
+            "P_ctrl": 31.9456,
+            "P_C_L_proxy": 0.12877350776534482,
+            "P_deadtime_excess": 10.666666666666664
+          },
+          "f3_uniformity_ratio": 0.01908434120563267,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 24,
+            "grid_nx": 7,
+            "grid_ny": 4,
+            "footprint_m": [
+              1.099,
+              0.628
+            ],
+            "envelope_m": [
+              2.0,
+              1.2
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 0.1373669746468203,
+            "max_phi_v": 7.197889262547714,
+            "min_location_tx_units": [
+              2.0,
+              0.875
+            ],
+            "uniformity_ratio": 0.01908434120563267,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 3.0029140987819503e-05
+        },
+        "minimum_efficiency_swing": {
+          "scenario_id": "P0-C",
+          "parameters": {
+            "delta_f_hz": 500.0,
+            "c_l_uf": 30.0,
+            "n_phase": 3,
+            "t_dead_ns": 500.0,
+            "l_f_uH": 8.549999999999999,
+            "n_tx": 24
+          },
+          "f1_total_loss_w": 15585.654354728682,
+          "loss_terms_w": {
+            "P_sw": 14.408640000000002,
+            "P_cond": 481.4814814814817,
+            "P_mag": 11700.00685546942,
+            "P_ctrl": 11.9796,
+            "P_C_L_proxy": 2400.0,
+            "P_deadtime_excess": 977.7777777777783
+          },
+          "f3_uniformity_ratio": 0.01908434120563267,
+          "f4_geometry_violation_m": 0.0,
+          "geometry_feasible": true,
+          "field_diagnostics": {
+            "n_tx": 24,
+            "grid_nx": 7,
+            "grid_ny": 4,
+            "footprint_m": [
+              1.099,
+              0.628
+            ],
+            "envelope_m": [
+              2.0,
+              1.2
+            ],
+            "geometry_violation_m": 0.0,
+            "samples_per_tx": 8,
+            "min_phi_v": 0.1373669746468203,
+            "max_phi_v": 7.197889262547714,
+            "min_location_tx_units": [
+              2.0,
+              0.875
+            ],
+            "uniformity_ratio": 0.01908434120563267,
+            "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+          },
+          "f2_max_delta_f_eff": 2.5236925777494257e-05
+        }
+      },
+      "selected_compromise": {
+        "scenario_id": "P0-C",
+        "parameters": {
+          "delta_f_hz": 500.0,
+          "c_l_uf": 39.33892640241516,
+          "n_phase": 4,
+          "t_dead_ns": 428.94736842105266,
+          "l_f_uH": 9.974999999999998,
+          "n_tx": 24
+        },
+        "f1_total_loss_w": 13634.669871937103,
+        "loss_terms_w": {
+          "P_sw": 16.467017142857145,
+          "P_cond": 198.9795918367348,
+          "P_mag": 11700.00685546942,
+          "P_ctrl": 15.9728,
+          "P_C_L_proxy": 995.0731814229268,
+          "P_deadtime_excess": 708.1704260651634
+        },
+        "f3_uniformity_ratio": 0.01908434120563267,
+        "f4_geometry_violation_m": 0.0,
+        "geometry_feasible": true,
+        "field_diagnostics": {
+          "n_tx": 24,
+          "grid_nx": 7,
+          "grid_ny": 4,
+          "footprint_m": [
+            1.099,
+            0.628
+          ],
+          "envelope_m": [
+            2.0,
+            1.2
+          ],
+          "geometry_violation_m": 0.0,
+          "samples_per_tx": 8,
+          "min_phi_v": 0.1373669746468203,
+          "max_phi_v": 7.197889262547714,
+          "min_location_tx_units": [
+            2.0,
+            0.875
+          ],
+          "uniformity_ratio": 0.01908434120563267,
+          "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+        },
+        "f2_max_delta_f_eff": 2.7544107400800932e-05
+      },
+      "sensitivity_relative_pct": {
+        "max_abs_f1_change": {
+          "parameter": "c_l_uf",
+          "value": 37.3719800822944,
+          "f1_change_pct": 1.4285584324748255,
+          "f2_change_pct": -0.8868126846134556
+        },
+        "max_abs_f2_change": {
+          "parameter": "c_l_uf",
+          "value": 37.3719800822944,
+          "f1_change_pct": 1.4285584324748255,
+          "f2_change_pct": -0.8868126846134556
+        },
+        "largest_discrete_n_phase_f1_change": {
+          "parameter": "n_phase",
+          "value": 3,
+          "f1_change_pct": 1.0755812341157607,
+          "f2_change_pct": -0.6687939521976184
+        }
+      },
+      "fragility_assessment": {
+        "threshold_pct": 5.0,
+        "fragile": false,
+        "basis": "continuous +/-5% perturbations; discrete n_phase neighbors reported separately"
+      },
+      "global_to_fine_movement_pct": {
+        "delta_f_hz": 0.0,
+        "c_l_uf": 0.0,
+        "t_dead_ns": 0.0,
+        "l_f_uH": 0.0
+      },
+      "max_fine_step_movement_pct": 0.0,
+      "step_adequacy": "当前步长满足本次局部细化判据",
+      "geometry": {
+        "n_tx": 24,
+        "grid_nx": 7,
+        "grid_ny": 4,
+        "footprint_m": [
+          1.099,
+          0.628
+        ],
+        "envelope_m": [
+          2.0,
+          1.2
+        ],
+        "geometry_violation_m": 0.0,
+        "samples_per_tx": 8,
+        "min_phi_v": 0.1373669746468203,
+        "max_phi_v": 7.197889262547714,
+        "min_location_tx_units": [
+          2.0,
+          0.875
+        ],
+        "uniformity_ratio": 0.01908434120563267,
+        "provenance": "P4 qualitative signed kernel; two-tone beat RMS on 1/8 Tx grid; min/max ratio"
+      },
+      "deadtime_diagnostic": {
+        "literal_document_range_ns": [
+          50.0,
+          500.0
+        ],
+        "natural_commutation_ns_at_center": 41.66666666666668,
+        "selected_deadtime_ns": 428.94736842105266,
+        "selected_setting_exceeds_t_zn": true,
+        "handling": "literal P7 candidates retained; P6 excess-conduction proxy penalizes t_dead above t_zn"
+      }
+    }
+  ]
+}

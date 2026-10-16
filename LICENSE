@@ -1,0 +1,32 @@
+MIT License
+
+Copyright (c) 2026 sodium-aidc-wireless-power contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+本项目引用了以下论文的实测参数与相位图案：
+
+Y. Liu, S. A. Al Mahmud, N. Ha-Van, P. Jayathurathnage,
+"Noncoherent Power Combining for Free-Positioning Wireless Power Transfer
+in Large Area," IEEE Transactions on Industrial Electronics, 2024.
+
+该论文采用 CC BY 4.0 许可，允许复制、修改与再分发（须标注出处）。
+其中 Table II 的线圈与系统参数、Fig.1(c) 的 4x4 相位图案引用自该论文。
